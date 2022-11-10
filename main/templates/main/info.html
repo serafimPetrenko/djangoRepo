@@ -11,10 +11,10 @@
 {% block cycle %}
     {% for el in info_items %}
 	<div>
-        <h2>{{ el.id }}</h2>
-		<p>{{ el.pharmacy }}</p>
-		<p>{{ el.pills }}</p>
-		<p>{{ el.amount}}</p>
+        <h2>Запись № {{ el.id }}</h2>
+		<p>Аптека: {{ el.pharmacy }}</p>
+		<p>Лекарство: {{ el.pills }}</p>
+		<p>Количество на складе (шт): {{ el.amount}}</p>
         <hr>
 	</div>
 	{% endfor %}

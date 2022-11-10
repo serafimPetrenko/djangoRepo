@@ -15,9 +15,9 @@
 {% block cycle %}
     {% for el in pharmacy_items %}
 	<div>
-		<h2>{{ el.number }}</h2>
-		<p>{{ el.location }}</p>
-		<p>{{ el.metro_station}}</p>
+		<h2>Аптека {{ el.number }}</h2>
+		<p>Адрес: {{ el.location }}</p>
+		<p>Станция метро {{ el.metro_station}}</p>
         <hr>
 	</div>
 	{% endfor %}

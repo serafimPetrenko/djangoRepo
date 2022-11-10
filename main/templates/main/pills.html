@@ -11,12 +11,12 @@
 {% block cycle %}
     {% for el in pills_items %}
 	<div>
-		<h2>{{ el.name }}</h2>
-		<p>{{ el.doze }}</p>
-		<p>{{ el.amount}}</p>
-        <p>{{ el.creator}}</p>
-        <p>{{ el.category}}</p>
-        <p>{{ el.price}}</p>
+		<h2>Название: {{ el.name }}</h2>
+		<p>Дозировка (мг): {{ el.doze }}</p>
+		<p>Количество (шт): {{ el.amount}}</p>
+        <p>Производитель: {{ el.creator}}</p>
+        <p>Категория лекарства: {{ el.category}}</p>
+        <p>Цена (руб): {{ el.price}}</p>
         <hr>
 	</div>
 	{% endfor %}
