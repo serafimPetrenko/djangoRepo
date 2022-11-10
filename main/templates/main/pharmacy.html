@@ -1,0 +1,24 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+Аптеки
+{% endblock %}
+
+{% block content %}
+Аптеки
+{% endblock %}
+
+{% block entity_name %}
+Аптеки
+{% endblock %}
+
+{% block cycle %}
+    {% for el in pharmacy_items %}
+	<div>
+		<h2>{{ el.number }}</h2>
+		<p>{{ el.location }}</p>
+		<p>{{ el.metro_station}}</p>
+        <hr>
+	</div>
+	{% endfor %}
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+Лекарства
+{% endblock %}
+
+{% block entity_name %}
+Лекарства
+{% endblock %}
+
+{% block cycle %}
+    {% for el in pills_items %}
+	<div>
+		<h2>{{ el.name }}</h2>
+		<p>{{ el.doze }}</p>
+		<p>{{ el.amount}}</p>
+        <p>{{ el.creator}}</p>
+        <p>{{ el.category}}</p>
+        <p>{{ el.price}}</p>
+        <hr>
+	</div>
+	{% endfor %}
+{% endblock %}
